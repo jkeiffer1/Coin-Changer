@@ -1,5 +1,5 @@
 require "minitest/autorun"
-require_relative "Hash_coin_changer.rb"
+require_relative "coin_changer.rb"
 class Coin_changer_test < Minitest::Test
 
 	def test_1_equals_1
