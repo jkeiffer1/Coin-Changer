@@ -1,9 +1,9 @@
-<h1> <%=firstname%> <%=lastname%>, What are we making change with today?</h1>
+<h1> <%=firstname%> <%=lastname%> Enter the amount you would like change for.</h1>
 
 
 <form method="post" action="coins">
 	<input type="number" name="total">
-	<input type="submit" action="enter">
+	<input type="submit" value="make change">
 	<input type="hidden" name="firstname" value= "<%=firstname%>">
 	<input type="hidden" name="lastname" value="<%=lastname%>">
 </form>	
