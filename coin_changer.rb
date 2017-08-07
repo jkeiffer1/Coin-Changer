@@ -65,9 +65,14 @@ def coin_changer(change)
 		end
 	end
 
-	coins.to_a.flatten.join(" ")
-
-
+	woop = ""
+	coins.each_with_index do |(coin,value),index|
+		if index < coins.length-1
+			woop << "#{value} #{coin}, "
+		else
+			woop << "and #{value} #{coin}."
+	end
 end
-
-# p coin_changer(77)
+"#{woop}"
+end
+#p coin_changer(12)
