@@ -18,6 +18,13 @@
 	text-align: right;
 }
 
+.backimage{
+	background-image: url(/image/reddragon.jpeg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: black;
+}
 header{
 	width: 100%;
 	border: groove;
@@ -53,8 +60,8 @@ head{
 body{
 	text-align: center;
 	margin: 0;
-	background-image: url(/image/reddragon.jpeg);
-	background-size: cover;
+/*	background-image: url(/image/reddragon.jpeg);
+*/	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-color: black;
