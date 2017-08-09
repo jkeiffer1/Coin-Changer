@@ -53,8 +53,8 @@ head{
 body{
 	text-align: center;
 	margin: 0;
-	background-image: url(/image/reddragon.jpeg);
-	background-size: 100%;
+/*	background-image: url(/image/reddragon.jpeg);*/
+	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-color: black;

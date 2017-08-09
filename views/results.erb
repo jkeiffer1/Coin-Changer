@@ -1,14 +1,15 @@
-<h1>Thank You <%=firstname%> <%=lastname%>
+<body id= "bohdey">
+	<h1 onmouseover="color_gold(this)" onmouseout="color_silver(this)">Thank You <%=firstname%> <%=lastname%>
 	The amount given was<br>
 	<%=total%><br>
 	The change for that is<br>
  	<%=change%><br>
 	The current date and time is, <%=date_time%>.
 </h1>
+</body>
 
-<div onmouseover="color_gold(this)" onmouseout="color_silver(this)">
-<%change%>
-</div>
+
+
 
 
 
@@ -28,10 +29,17 @@ var bks = new Array("/image/americancheshire.jpeg",
 
 var count= 0;
 
+
+
+
 function changebackground(){
-	document.body.style.background="url('"+bks[count]+"') center center";
-	
-	count = Math.floor(Math.random() * (bks.length - 0)) + 0;
+	// alert("before run");
+	document.body.style.background="url('"+bks[count]+"')center center no-repeat";
+	document.body.style.backgroundSize = "cover";
+	// var el= document.getElementById("bohdey");
+	// el.style.width = 500px;
+	count = Math.floor(Math.random() * (bks.length)) + 0;
+	// alert("after run");
 }
 
 function color_gold(x){
@@ -50,5 +58,3 @@ function color_silver(x){
 <h1>Would you like to try another number?<br>
 <center><input type= "submit" value= "redo"></center>
 </form></h1>
-<body>
-</body>
