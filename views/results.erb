@@ -1,12 +1,54 @@
 <h1>Thank You <%=firstname%> <%=lastname%>
-The amount given was<br>
-<%=total%><br>
-The change for that is<br>
- <%=change%><br>
-The current date and time is, <%=date_time%>.
+	The amount given was<br>
+	<%=total%><br>
+	The change for that is<br>
+ 	<%=change%><br>
+	The current date and time is, <%=date_time%>.
+</h1>
+
+<div onmouseover="color_gold(this)" onmouseout="color_silver(this)">
+<%change%>
+</div>
+
+
+
+
+
+
+
+<script>
+var bks = new Array("/image/americancheshire.jpeg",
+					 "/image/cheshire.jpeg",
+					 "/image/parisgodzilla.jpeg",
+					 "/image/thorg.gif",
+					 "/image/godzilla.gif",
+					 "/image/thorg.gif",
+					 "/image/ticklekitty.gif",
+					 "/image/reptar.gif");
+
+var count= 0;
+
+function changebackground(){
+	document.body.style.background="url('"+bks[count]+"') center center";
+	
+	count = Math.floor(Math.random() * (bks.length - 0)) + 0;
+}
+
+function color_gold(x){
+	x.style.color = "gold"
+}
+
+function color_silver(x){
+	x.style.color = "silver"
+}
+</script>
+
+<button type = 'button' onclick ="changebackground()">New Background</button>
 <form method= "post" action= "results">
 	<input type="hidden" name="firstname" value = "<%=firstname%>">
 	<input type="hidden" name="lastname" value = "<%=lastname%>"></h1>
 <h1>Would you like to try another number?<br>
-<input type= "submit" value= "redo">
+<center><input type= "submit" value= "redo"></center>
 </form></h1>
+<body>
+</body>
