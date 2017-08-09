@@ -1,10 +1,22 @@
 <h1> <%=firstname%> <%=lastname%> Enter the amount you would like change for.</h1>
 
+<script>
+	function myFunction(alert) {
+		alert("")
+}
+var d = new Date();
+function datefunction(){
+	alert(d);
+	document.getElementById("ndays").value = d;
+}
+</script>
+
 
 <form method="post" action="coins">
 	<input type="number" name="total">
-	<input type="submit" value="make change">
+	<input type="submit" value="make change" onclick= "datefunction()"></button>
 	<input type="hidden" name="firstname" value= "<%=firstname%>">
 	<input type="hidden" name="lastname" value="<%=lastname%>">
+	<input type="hidden" id = "ndays" name= "date_time">
 </form>	
 
